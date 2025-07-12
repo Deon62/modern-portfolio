@@ -1454,22 +1454,28 @@ footer {
     margin: 2.2rem 0 1.2rem 0;
     text-align: left;
 }
-.frameworks-row.autoscroll {
+.frameworks-row.autoscroll, .scroll-row.autoscroll {
+    display: flex;
     position: relative;
     overflow: hidden;
-    animation: scroll-left 28s linear infinite;
+    min-width: 100vw;
+    width: max-content;
+    animation: scroll-left-responsive 32s linear infinite;
     will-change: transform;
 }
-@keyframes scroll-left {
+@keyframes scroll-left-responsive {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
-.framework-card span {
-    max-width: 90px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: block;
+.framework-card, .tech-card {
+    min-width: 140px;
+    max-width: 180px;
+}
+@media (max-width: 700px) {
+    .framework-card, .tech-card {
+        min-width: 120px;
+        max-width: 160px;
+    }
 }
 
 .frameworks-row {
