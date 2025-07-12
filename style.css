@@ -71,7 +71,7 @@ img {
 }
 
 section {
-    padding: 5rem 2rem;
+    padding: 2.2rem 0.7rem;
 }
 
 .section-title {
@@ -1389,8 +1389,8 @@ footer {
 .skills-grid-modern {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    margin: 2.5rem auto 0 auto;
+    gap: 1.1rem;
+    margin: 1.2rem auto 0.5rem auto;
     max-width: 1100px;
     padding: 0 1rem;
 }
@@ -1442,7 +1442,7 @@ footer {
 @media (max-width: 700px) {
     .skills-grid-modern {
         grid-template-columns: 1fr;
-        gap: 1.2rem;
+        gap: 0.5rem;
         padding: 0;
     }
     .skill-card-modern {
@@ -1450,8 +1450,12 @@ footer {
     }
 }
 
-.frameworks-section, .aiml-section, .blockchain-section, .softskills-section, .devops-section {
-    margin: 2.2rem 0 1.2rem 0;
+.frameworks-section, .aiml-section, .softskills-section {
+    margin: 0.7rem 0 0.3rem 0;
+    text-align: left;
+}
+.devops-section {
+    margin: 0.7rem 0 1.2rem 0;
     text-align: left;
 }
 .frameworks-row.autoscroll, .scroll-row.autoscroll {
@@ -1526,7 +1530,7 @@ footer {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1.1rem;
+    gap: 0.5rem;
     font-size: 1.08rem;
 }
 .devops-list li {
